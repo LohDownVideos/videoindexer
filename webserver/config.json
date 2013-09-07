@@ -1,0 +1,18 @@
+{
+  "elasticsearch": {
+    "port": "9200",
+    "host": "localhost",
+    "index": "video",
+    "videoType": "video"
+  },
+
+  "webserver": {
+    "port": "3000",
+    "host": "0.0.0.0",
+    "staticfiles": "../client"
+  },
+
+  "videoStorage": {
+    "uploadDirPath": "../videos"
+  }
+}
