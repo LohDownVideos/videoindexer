@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <head>
 	<title>Video Indexer</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/site.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="site.css">
+	<link href='http://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>
 
 
 </head>
-<body>
-	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/home.js"></script>
 
+<div id='background-img'></div>
+
+<body>
+
+	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src='main-page.js' type='text/javascript'></script>
 
 	<div class='container'>
-		<div class='hero-unit'>
-		<h1 id='title'><span class='header-text'>&nbsp;Video Indexer&nbsp;</h1>
-		<div id='app-description'><span class='header-text'> <strong>Search</strong> for a word, and if it's mentioned in the video, this will hop to it.
-		</span></div>
-		</div>
-		<hr>
-		<div class='row'>
-			<div class='span12 row-header'>
-				<p>Video goes here</p>
+
+			<div class='hero-unit'>
+				<h1 id='title'><span class='header-text'>&nbsp;Video Indexer&nbsp;</h1>
+				<div id='app-description' class='row'><span class='header-text'> <strong>Search</strong> for a word, and if it's mentioned in the video, this will hop to it.</span></div>
+				<div class='row'>
+					<div class='span12 row-header'>
+
+							<form action='upload.php' method='post' accept="video/*"
+							enctype='multipart/form-data' id='upload-file'>
+				  			Pick a movie: <input type='file' name='file' class='btn btn-primary' id='file-input'/>
+							</form>
+
+					</div>
+				</div>
+				<div class='row'>
+					<input id='search' class='search-default' title='Search for a word, and this will hop to it.'></input>
+				</div>
 			</div>
-		</div>
 	</div>
 
 
